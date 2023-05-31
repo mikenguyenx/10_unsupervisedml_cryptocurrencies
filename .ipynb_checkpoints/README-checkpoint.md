@@ -1,20 +1,20 @@
-# 10_unsupervisedml_cryptocurrencies
+# Cryptocurrency Clusters
 
-////////  To Update
+An advisor in one of the top five financial advisory firms in the world wants to propose a novel approach to assembling investment portfolios that are based on cryptocurrencies. Instead of basing the proposal on only returns and volatility, other factors that might impact the crypto market will be included—leading to better portfolio performance.
+
+This project includes a Jupyter notebook that clusters cryptocurrencies by their performance in different time periods and visualization plots to present the results.
+
 
 ## Technologies
 
-Programming Languages: Python 3.7.13 & SQL
+Programming Languages: Python 3.7.13
 
 Interactive Development Environment: JupyterLab
 
 
 Libraries: 
 - Pandas - A Python library that is used for data manipulation, analysis, and visualization. 
-- Prophet - 
-- Sqlalchemy - An open-source SQL library for Python designed to ease the communication between Python-based programs and databases. 
-- Voilà - A Python library which allows you to convert a Jupyter notebook into a live webpage. 
-- Numpy - A popular open-source numerical computing library for Python which provides a powerful array object and a collection of mathematical functions. 
+- Scikit-learn - Also known as sklearn, is a popular open-source Python library for machine learning and provides a wide range of algorithms and tools for tasks such as classification, regression, clustering, dimensionality reduction, and model selection. 
 - HvPlot - A Python library that provides a high-level interface for quickly creating interactive plots and visualizations using popular plotting libraries such as Matplotlib, Bokeh, and Plotly.
 - Warnings - A Python library that provides a way to handle warning messages that may occur during the execution of a program.
 
@@ -28,43 +28,43 @@ To run this analysis, make sure you install the necessary dependencies:
 2. Install and run Jupyter Lab:  https://jupyter.org/install
 3. Install Anaconda: https://docs.anaconda.com/free/anaconda/install/
 4. Install the necessary libraries using pip, the package installer for Python:
-```
-pip install pandas numpy hvplot SQLAlchemy
-```
-To check if sqlalchemy is already installed, run the following command:
-```
- conda list sqlalchemy
-```
-If it is installed, the following should be displayed:
-![sqlalchemy_install](sqlalchemy_install.png)
 
-To install Voilà, run the following command:
+Install Pandas
 ```
-conda install -c conda-forge voila
+pip install pandas  
 ```
-After installation for voila is complete, the following should be displayed:
-![voila_install](voila_install.png)
+Install scikit-learn
+```
+pip install -U scikit-learn
+```
+Install hvPlot
+```
+conda install -c pyviz hvplot
+```
+Once scikit-learn is installed, the following should be displayed:
+![sklearn](sklearn.png)
 
-5. Clone the repository: `git clone "https://github.com/mikenguyenx/7_passive_investing_sql"` using git or download the ZIP file and extract it to a local directory.
+Once hvplot is installed, the following should be displayed:
+![hvplot](hvplot.png)
+
+5. Clone the repository: `git clone "https://github.com/mikenguyenx/10_unsupervisedml_cryptocurrencies"` using git or download the ZIP file and extract it to a local directory.
 
 
 ## Usage
 
-To run the script for the Fund Portfolio Risk Return Analysis:
+To run the script for this project:
 
 1. Open a terminal or command prompt and navigate to the directory with the analysis.
 1. Launch Jupyter Lab: jupyter lab
-2. Open `etf_analyzer.ipynb` in Jupyter Lab.
+2. Open `crypto_investments.ipynb` in Jupyter Lab.
 3. Run the code cells by clicking on the run button or by pressing the `Shift + Enter` key combination to load and preprocess the data, and generate visualizations
-4. This project involves building a financial database and web application by using SQL, Python, and the Voilà library to analyze the performance of a hypothetical fintech ETF.
+4. This project involves building a Jupyter notebook that clusters cryptocurrencies by their performance in different time periods and visualization plots to present the results.
 
-## Cumulative Returns Interactive Plot
+## Interactive Composite Plots
 
-![cumulative_returns](cumulative_returns.png)
+![composite_elbow](composite_elbow.png)
 
-## Web Application Deployment (Voilà) 
-
-[voila_clip.webm](https://github.com/mikenguyenx/7_passive_investing_sql/assets/127016510/6e6791be-6e7a-4e0b-85b2-afb56c43171f)
+![composite_scatter](composite_scatter.png)
 
 
 ## Contributors
